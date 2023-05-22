@@ -14,6 +14,15 @@
 		2E75A0E32A1A6BA4008386DF /* Hye_AraratTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75A0E22A1A6BA4008386DF /* Hye_AraratTests.swift */; };
 		2E75A0ED2A1A6BA4008386DF /* Hye_AraratUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75A0EC2A1A6BA4008386DF /* Hye_AraratUITests.swift */; };
 		2E75A0EF2A1A6BA4008386DF /* Hye_AraratUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75A0EE2A1A6BA4008386DF /* Hye_AraratUITestsLaunchTests.swift */; };
+		2E75A0FC2A1A6CFA008386DF /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75A0FB2A1A6CFA008386DF /* Navigation.swift */; };
+		2E75A0FE2A1A6DEC008386DF /* Instances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75A0FD2A1A6DEC008386DF /* Instances.swift */; };
+		2E75A1002A1A8E9A008386DF /* Instance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75A0FF2A1A8E9A008386DF /* Instance.swift */; };
+		2E75A1062A1ABB4D008386DF /* CreateInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75A1052A1ABB4D008386DF /* CreateInstance.swift */; };
+		2E75A1092A1AC303008386DF /* InstanceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75A1082A1AC303008386DF /* InstanceDetails.swift */; };
+		2E75A10B2A1BA338008386DF /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75A10A2A1BA338008386DF /* KeychainHelper.swift */; };
+		2E75A10D2A1BA6CF008386DF /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75A10C2A1BA6CF008386DF /* Authentication.swift */; };
+		2E75A1172A1BB13E008386DF /* AppAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2E75A1162A1BB13E008386DF /* AppAuth */; };
+		2E75A1192A1BB13E008386DF /* AppAuthCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2E75A1182A1BB13E008386DF /* AppAuthCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,13 @@
 		2E75A0E82A1A6BA4008386DF /* Hye AraratUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hye AraratUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E75A0EC2A1A6BA4008386DF /* Hye_AraratUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hye_AraratUITests.swift; sourceTree = "<group>"; };
 		2E75A0EE2A1A6BA4008386DF /* Hye_AraratUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hye_AraratUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2E75A0FB2A1A6CFA008386DF /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		2E75A0FD2A1A6DEC008386DF /* Instances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instances.swift; sourceTree = "<group>"; };
+		2E75A0FF2A1A8E9A008386DF /* Instance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instance.swift; sourceTree = "<group>"; };
+		2E75A1052A1ABB4D008386DF /* CreateInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateInstance.swift; sourceTree = "<group>"; };
+		2E75A1082A1AC303008386DF /* InstanceDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstanceDetails.swift; sourceTree = "<group>"; };
+		2E75A10A2A1BA338008386DF /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		2E75A10C2A1BA6CF008386DF /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E75A1172A1BB13E008386DF /* AppAuth in Frameworks */,
+				2E75A1192A1BB13E008386DF /* AppAuthCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +113,17 @@
 		2E75A0CF2A1A6BA3008386DF /* Hye Ararat */ = {
 			isa = PBXGroup;
 			children = (
+				2E75A10E2A1BAB89008386DF /* lib */,
+				2E75A1042A1ABB37008386DF /* Instance */,
 				2E75A0D02A1A6BA3008386DF /* Hye_AraratApp.swift */,
 				2E75A0D22A1A6BA3008386DF /* ContentView.swift */,
 				2E75A0D42A1A6BA4008386DF /* Assets.xcassets */,
 				2E75A0D62A1A6BA4008386DF /* Hye_Ararat.entitlements */,
 				2E75A0D72A1A6BA4008386DF /* Preview Content */,
+				2E75A0FB2A1A6CFA008386DF /* Navigation.swift */,
+				2E75A0FD2A1A6DEC008386DF /* Instances.swift */,
+				2E75A0FF2A1A8E9A008386DF /* Instance.swift */,
+				2E75A10C2A1BA6CF008386DF /* Authentication.swift */,
 			);
 			path = "Hye Ararat";
 			sourceTree = "<group>";
@@ -129,6 +153,31 @@
 			path = "Hye AraratUITests";
 			sourceTree = "<group>";
 		};
+		2E75A1042A1ABB37008386DF /* Instance */ = {
+			isa = PBXGroup;
+			children = (
+				2E75A1072A1AC2F1008386DF /* CreateInstance */,
+				2E75A1052A1ABB4D008386DF /* CreateInstance.swift */,
+			);
+			path = Instance;
+			sourceTree = "<group>";
+		};
+		2E75A1072A1AC2F1008386DF /* CreateInstance */ = {
+			isa = PBXGroup;
+			children = (
+				2E75A1082A1AC303008386DF /* InstanceDetails.swift */,
+			);
+			path = CreateInstance;
+			sourceTree = "<group>";
+		};
+		2E75A10E2A1BAB89008386DF /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				2E75A10A2A1BA338008386DF /* KeychainHelper.swift */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +194,10 @@
 			dependencies = (
 			);
 			name = "Hye Ararat";
+			packageProductDependencies = (
+				2E75A1162A1BB13E008386DF /* AppAuth */,
+				2E75A1182A1BB13E008386DF /* AppAuthCore */,
+			);
 			productName = "Hye Ararat";
 			productReference = 2E75A0CD2A1A6BA3008386DF /* Hye Ararat.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +270,9 @@
 				Base,
 			);
 			mainGroup = 2E75A0C42A1A6BA3008386DF;
+			packageReferences = (
+				2E75A1152A1BB13E008386DF /* XCRemoteSwiftPackageReference "AppAuth-iOS" */,
+			);
 			productRefGroup = 2E75A0CE2A1A6BA3008386DF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +315,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E75A1062A1ABB4D008386DF /* CreateInstance.swift in Sources */,
+				2E75A1002A1A8E9A008386DF /* Instance.swift in Sources */,
+				2E75A0FC2A1A6CFA008386DF /* Navigation.swift in Sources */,
+				2E75A10B2A1BA338008386DF /* KeychainHelper.swift in Sources */,
+				2E75A1092A1AC303008386DF /* InstanceDetails.swift in Sources */,
 				2E75A0D32A1A6BA3008386DF /* ContentView.swift in Sources */,
+				2E75A0FE2A1A6DEC008386DF /* Instances.swift in Sources */,
 				2E75A0D12A1A6BA3008386DF /* Hye_AraratApp.swift in Sources */,
+				2E75A10D2A1BA6CF008386DF /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "Hye Ararat/Hye_Ararat.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -419,6 +483,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Hye Ararat";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -438,6 +503,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,6 +516,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "Hye Ararat/Hye_Ararat.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -457,6 +525,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Hye Ararat";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -476,6 +545,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -612,6 +683,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2E75A1152A1BB13E008386DF /* XCRemoteSwiftPackageReference "AppAuth-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/openid/AppAuth-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2E75A1162A1BB13E008386DF /* AppAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E75A1152A1BB13E008386DF /* XCRemoteSwiftPackageReference "AppAuth-iOS" */;
+			productName = AppAuth;
+		};
+		2E75A1182A1BB13E008386DF /* AppAuthCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E75A1152A1BB13E008386DF /* XCRemoteSwiftPackageReference "AppAuth-iOS" */;
+			productName = AppAuthCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2E75A0C52A1A6BA3008386DF /* Project object */;
 }

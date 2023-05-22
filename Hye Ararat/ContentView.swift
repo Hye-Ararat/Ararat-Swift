@@ -6,16 +6,26 @@
 //
 
 import SwiftUI
+import AppAuth
 
 struct ContentView: View {
+    @State private var needAuth = (KeychainHelper.standard.read(service: "ararat", account: "ararat") == nil)
+    @State private var araratUrl = ""
+    @State private var loginKey = ""
+    @State private var showingAuthPage = false
+    private var authState: OIDAuthState?
+
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        Navigation().alert("Welcome to Ararat!", isPresented: $needAuth) {
+            TextField("Ararat URL", text: $araratUrl).autocorrectionDisabled(true)
+            SecureField("Login Key", text: $loginKey).autocorrectionDisabled(true)
+            Button("OK") {
+                showingAuthPage.toggle()
+            }
+        } message: {
+            Text("Please enter your Hye Ararat URL and login key")
         }
-        .padding()
     }
 }
 
